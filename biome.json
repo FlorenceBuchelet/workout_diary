@@ -10,6 +10,15 @@
 		"lineWidth": 80,
 		"lineEnding": "lf"
 	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"suspicious": {
+				"noConsoleLog": "error"
+			}
+		}
+	},
 	"javascript": {
 		"formatter": {
 			"arrowParentheses": "always",
@@ -21,16 +30,12 @@
 			"trailingCommas": "all"
 		}
 	},
+	"json": {
+		"formatter": {
+			"trailingCommas": "none"
+		}
+	},
 	"organizeImports": {
 		"enabled": true
-	},
-	"linter": {
-		"enabled": true,
-		"rules": {
-			"recommended": true,
-			"suspicious": {
-				"noConsoleLog": "error"
-			}
-		}
 	}
 }
