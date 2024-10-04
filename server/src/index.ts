@@ -9,7 +9,7 @@ import { CategoryResolver } from "./resolvers/CategoryResolvers";
 import dotenv from 'dotenv';
 dotenv.config();
 
-const port = 3200;
+const port = 3800;
 
 export async function startServerApollo() {
 

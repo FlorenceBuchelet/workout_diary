@@ -3,7 +3,12 @@
 // -- alphabetical order
 
 #root {
-    color: $primary-dark;
+    color: $primary-light;
+}
+
+html {
+    background-color: $background-color;
+
 }
 
 a {
@@ -51,9 +56,56 @@ blockquote {
     }
 }
 
+$button-lighter: lighten($secondary-dark, 20%); // Gris clair
+$button-light: $secondary-dark;       // Gris moyen
+$button-dark: darken($secondary-dark, 20%);  // Gris foncé
+$button-darker: darken($secondary-dark, 50%); // Gris très foncé
+$white: $primary-light;      // Blanc
+
 button {
     &::before {
         content: "⬭ ";
+    }
+    display: inline-block;
+    padding: 0.5rem 1rem; // Taille plus proche des boutons par défaut
+    margin: 0.2rem;
+    margin-block: 0.7rem;
+    border: 1px solid $button-light; // Bordure par défaut
+    border-radius: 50px; // Coins arrondis
+    background-color: $white; // Couleur de fond par défaut
+    color: $button-light; // Couleur du texte par défaut
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Ombre pour effet d'enfoncement
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+    text-shadow: $secondary-dark 5px 0 20px;
+    filter: drop-shadow(0 0 0.7rem $secondary-dark);
+
+    // État de survol
+    &:hover {
+        background-color: $button-lighter; // Change la couleur de fond au survol
+        color: $white; // Change la couleur du texte au survol
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Ombre plus marquée
+        text-shadow: $primary-light 5px 0 20px;
+    }
+
+    // État actif
+    &:active {
+        background-color: $button-light; // Change la couleur de fond lors de l'activation
+        color: $white; // Change la couleur du texte lors de l'activation
+        box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2); // Ombre enfoncée
+        transform: translateY(2px); // Déplace le bouton vers le bas
+        text-shadow: $primary-light 5px 0 20px;
+    }
+
+    // État désactivé
+    &.disabled {
+        background-color: $button-darker; // Couleur de fond désactivée
+        color: $button-lighter; // Couleur de texte désactivée
+        cursor: not-allowed; // Indique que le bouton est désactivé
+        pointer-events: none; // Désactive les événements
+        border: 1px solid $button-lighter; // Bordure plus claire pour l'état désactivé
     }
 }
 

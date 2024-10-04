@@ -1,12 +1,26 @@
 // All mixins must be gathered in this file
 
 @mixin title {
-    color: $secondary-dark;
+    @include neon-text;
+    color: $primary-light;
     padding-inline: 1rem;
 
+
     &::first-letter {
-        color: darken($secondary-dark, 30%);
+        color: darken($primary-light, 15%);
     }
+}
+
+@mixin neon-text {
+    text-shadow:
+    0 0 5px $secondary-light,
+    0 0 8px $secondary-light,
+    0 0 15px $secondary-light,
+    0 0 20px $secondary-dark,
+    0 0 30px $secondary-dark,
+    0 0 40px $secondary-dark,
+    0 0 50px $secondary-dark,
+    0 0 60px $secondary-dark;
 }
 
 @mixin quote {

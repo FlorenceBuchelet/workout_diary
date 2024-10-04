@@ -1,11 +1,11 @@
 // Main colors
-$primary-dark: #0C343D;
-$primary-light: #F9F4E5;
+$primary-dark: #131212;
+$primary-light: #FFDEE6;
 
-$secondary-dark: #8CC871;
-$secondary-light: #ECEC59;
+$secondary-dark: #D61D4E;
+$secondary-light: #FF0B55;
 
-$accent-color: #FFA84D;
+$accent-color: #FFF078;
 
 // Links
 $base-link: $accent-color;
@@ -20,6 +20,6 @@ $border-debug: 5px solid lime;
     border: $border-debug;
 }
 
-// Transparent variables renaming 
-$background-color: $primary-light;
-$aside-color: $primary-dark;
+// Explicit variables renaming 
+$background-color: $primary-dark;
+$aside-color: $primary-light;
