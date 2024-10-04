@@ -14,9 +14,19 @@ $active-link: blue;
 $hovered-link: lighten($accent-color, 10%);
 $focused-link: red;
 
+// Buttons
+$button-lighter: lighten($secondary-dark, 20%);
+$button-light: $secondary-dark;
+$button-dark: darken($secondary-dark, 20%);
+$button-darker: darken($secondary-dark, 50%);
+$white: $primary-light;
+
 // Debug
 $border-debug: 5px solid lime;
 .debug {
+    border: $border-debug;
+}
+@mixin debug {
     border: $border-debug;
 }
 
