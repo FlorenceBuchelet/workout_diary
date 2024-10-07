@@ -16,6 +16,8 @@ Feuille de route.
    1. Ajouter des performances.
    2. Consulter mes PBs (records).
    3. Titre CDA.
+   
+   Bonus : Exploiter au maximum les fonctionnalités de GitHub pour la gestion de projet.
 
 - 🟢 Définir le public cible.
 
@@ -65,8 +67,12 @@ Feuille de route.
     - 🔴 *Séquence* : _ressources/UML_diagrams/sequence.dio
 
 - 🔴 Organisation du projet (outils, équipe)
-   - *Ticketing* (Trello, Jira, GH Issues) : 
-   - *Backlog* (Trello, Jira, tableur) : 
+   - *Ticketing* (Trello, Jira, GH Issues) : **[GH Issues](https://github.com/FlorenceBuchelet/workout_diary/issues)** et **[GH Projects](https://github.com/users/FlorenceBuchelet/projects/1/views/1)**<br>
+   Système de priorités : 
+      - P0 : critique, urgent et immédiat.
+      - P1 : Must have.
+      -
+   - *Backlog* (Trello, Jira, tableur) : **[GH Projects](https://github.com/users/FlorenceBuchelet/projects/1/views/1)**
    - *Organisation de branches et méthode de nommage* : 
 
 **✨ Livrable ✨** : Liste de user stories, au moins trois diagrammes et une organisation bien définie.
