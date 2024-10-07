@@ -6,47 +6,63 @@ Feuille de route.
 - 🟢 Fait 
 
 ## I. Idéation
-- 🔴 Brainstorming (Idée principale, source d'inspiration première.).
+- 🟢 Brainstorming (Idée principale, source d'inspiration première.).
 
-        => 
+      => J'ai un excel de suivi de mes performances sportives qui commence à être très lourd et difficile à maintenir et j'aimerais le transformer en une appli mobile plus agile. Je veux pouvoir soumettre un exercice et la performance associée et je veux qu'un nombre de points soit calculé en fonction. Je veux pouvoir battre mes PBs régulièrement pour rester motivée. 
+      Je veux également que ce projet corresponde au cahier des charge du titre CDA pour pouvoir l'utiliser lors de la présentation si besoin.
 
-- 🔴 Lister trois objectifs.
+- 🟢 Lister trois objectifs.
 
-   1. 
-   2. 
-   3. 
+   1. Ajouter des performances.
+   2. Consulter mes PBs (records).
+   3. Titre CDA.
 
-- 🔴 Définir le public cible.
+- 🟢 Définir le public cible.
 
-        => 
+      => Moi, pas vraiment de plan pour que ce soit utilisable pour d'autres mais mes performances restent personnelles. 
 
-- 🔴 Identifier les fonctionnalités principales.
+- 🟢 Identifier les fonctionnalités principales.
 
-    - 
-    - 
-    - 
+    - Gestion de l'utilisateur
+    - Ajouter des performances : soumettre un nouvel exercice et les poids/reps de cette instance de l'exercice, choisir un exercice existant et soumettre une nouvelle performance.
+    - Calcul des points : penser un système de notation qui permettrait de comparer des exercices très différents entre eux (sans passer par les calories ou un autre indice de poids).
+    - Statistiques
+- 🟢 Nommer le projet (nom de travail ou **nom définitif**) : **Workout Diary** (initiales WOD comme *Workout of the Day*, un concept de cross-fit)
 
 **✨ Livrable ✨** : Une présentation du projet clairement formulée en quelques lignes.
+
+      Workout Diary est une application web de suivi de performances sportives qui vise à pousser son utilisateur à se dépasser en battant ses propres records. 
 
 ## II. Recherches et analyse des besoins
 - 🔴 Dossier d'inspiration : Trouver d'autres sites similaires, s'inspirer et tout rassembler sous forme de dossier de screenshots.
 - 🔴 Besoins fonctionnels (si nécessaire) : 
    - *Hébergement* : 
-   - *Méthode d'authentification* : 
-   - *Sécurité* : 
-   - *Back-ups* : 
+      - Frontend : **Vercel**
+      - Backend : **Render** (sleep mode écolo, peut héberger une BDD Postgre)
+      - BDD : **Render** (voire ElephantSQL (limité plan gratuit))
+   - *Méthode d'authentification* : **Json Web Token**.
+   - *Sécurité* : HTTPS (caddy), DVNA (?) (en attente cours)
+   - *Back-ups* : **Render**, fonctionnalité d'export des données utilisateur (CSV ou Json).
    - *Méthode de gestion des fichiers médias* : 
+      - Stockage d'images : **ImgBB** (https://api.imgbb.com/) (ou Cloudinary mais IA)
+- 🟢 Contraintes eventuelles (délai, matériel) :
+
+    - Deadline Juin 2025.
+    - Faire les dossiers en parallèle (dossier projet, Résumé du cahier des charges, dossier professionnel) : https://drive.google.com/drive/u/1/folders/14widlHnPZkhp0SMmnuHwwlOD74t7hDd6
+    - Projet solo.
+    - Utiliser les technos imposées par l'école (et donc attendre de les avoir).
+    - Le temps qui y sera consacré est très incertain (dépend de la charge de travail pro)
 
 **✨ Livrable ✨** : Dossier de screenshots et liste de besoins.
 
-## III. Cahier des charges (?)
-- 🔴 Outil US (Notion, GH Issues, tableur) : **_**
-- 🔴 User stories
+## III. Spécifications du projet
+- 🟢 Outil US (Notion, GH Issues, tableur) : **GH Issues**
+- 🟢 User stories : https://github.com/FlorenceBuchelet/workout_diary/issues
 - 🔴 UML :
-    - 🔴 Outil : **_**
-    - 🔴 *Class* : 
-    - 🔴 *Use case* : 
-    - 🔴 *Séquence* : 
+    - 🔴 Outil : **[Draw.io integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)** (extension VSCode)
+    - 🔴 *Class* : _ressources/UML_diagrams/class.dio
+    - 🔴 *Use case* : _ressources/UML_diagrams/use_case.dio
+    - 🔴 *Séquence* : _ressources/UML_diagrams/sequence.dio
 
 - 🔴 Organisation du projet (outils, équipe)
    - *Ticketing* (Trello, Jira, GH Issues) : 
@@ -92,7 +108,20 @@ Feuille de route.
 
 **✨ Livrable ✨** : Repo sur GitHub avec schéma d'architecture projet, screenshots des maquettes et des modèles de la BDD et page de Design System.
 
-## VII. Développement
+## VII. Tests de déploiement
+
+Une fois le repo initialisé, effectuer un déploiement précoce qui permettra de faire régulièrement des tests d'intégration.
+- 🔴 BDD
+- 🔴 Frontend 
+- 🔴 Backend
+
+**✨ Livrable ✨** : Adresses des trois parties du projet déployés.
+
+- BDD : 
+- Frontend : 
+- Backend : 
+
+## VIII. Développement
 - 🔴 BDD
    - 🔴 Création des tables/classes
    - 🔴 Seed ?
@@ -102,7 +131,7 @@ Feuille de route.
 
 **✨ Livrable ✨** : Projet complet.
 
-## VIII. Tests
+## IX. Tests
 - 🔴 Outils de tests : Jest (TU), React Testing Library (composant), Playwright (end-to-end) ?
     - 🔴 *Test unitaire* :
     - 🔴 *Test de composant* :
@@ -110,14 +139,14 @@ Feuille de route.
 
 **✨ Livrable ✨** : Dossier de tests sur le repo.
 
-## IX. Déploiement
+## X. Déploiement
 - 🔴 Outils : **_**
 - 🔴 Configurer l'hébergement 
 - 🔴 Déploiement
 
 **✨ Livrable ✨** : Projet accessible en ligne.
 
-## X. Suivi
+## XI. Suivi
 - 🔴 Axes d'amélioration : 
 
     - 
