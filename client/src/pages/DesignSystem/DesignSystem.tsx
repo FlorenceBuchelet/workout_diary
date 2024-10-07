@@ -93,6 +93,8 @@ export default function DesignSystem() {
                     <input type="range" />
                     <br />
                     <input type="search" />
+
+                    {/* TODO: exemple de formulaire et labels */}
                 </div>
                 <p>Inputs.</p>
             </div>
