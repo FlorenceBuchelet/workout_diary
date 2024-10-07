@@ -66,14 +66,15 @@ Feuille de route.
     - 🔴 *Use case* : _ressources/UML_diagrams/use_case.dio
     - 🔴 *Séquence* : _ressources/UML_diagrams/sequence.dio
 
-- 🔴 Organisation du projet (outils, équipe)
+- 🟢 Organisation du projet (outils, équipe)
    - *Ticketing* (Trello, Jira, GH Issues) : **[GH Issues](https://github.com/FlorenceBuchelet/workout_diary/issues)** et **[GH Projects](https://github.com/users/FlorenceBuchelet/projects/1/views/1)**<br>
    Système de priorités : 
-      - P0 : critique, urgent et immédiat.
-      - P1 : Must have.
-      -
+      - P0 : Critique, urgent et immédiat.
+      - P1 : Prioritaire.
+      - P2 : Non-prioritaire.
    - *Backlog* (Trello, Jira, tableur) : **[GH Projects](https://github.com/users/FlorenceBuchelet/projects/1/views/1)**
-   - *Organisation de branches et méthode de nommage* : 
+   - *Organisation de branches et méthode de nommage* : feat - fix - chore/numéro de US et numéro du ticket-sujet de la branche<br/>
+      ex. **feat/0112-manger-des-chips** (feature pour l'US01 ticket 12, manger des chips)
 
 **✨ Livrable ✨** : Liste de user stories, au moins trois diagrammes et une organisation bien définie.
 
