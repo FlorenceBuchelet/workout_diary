@@ -74,21 +74,33 @@ Feuille de route.
       - P2 : Non-prioritaire.
    - *Backlog* (Trello, Jira, tableur) : **[GH Projects](https://github.com/users/FlorenceBuchelet/projects/1/views/1)**
    - *Organisation de branches et méthode de nommage* : feat - fix - chore/numéro de US et numéro du ticket-sujet de la branche<br/>
-      ex. **feat/0112-manger-des-chips** (feature pour l'US01 ticket 12, manger des chips)
+      ex. **feat/0112-manger-des-chips** (feature pour l'US01 ticket 12, manger des chips)<br>
+      - Branche *develop* : On part de cette branche pour tout nouveau développement.
+      - Branche *main* : Déployée. Une fois les features complètement terminées et testées, elles peuvent être merge sur Main et déployées.
 
 **✨ Livrable ✨** : Liste de user stories, au moins trois diagrammes et une organisation bien définie.
 
 ## IV. Choix des technos
-- 🔴 Choix des technos (utilisation d'un template ?)
-   - 🔴 *General* : 
-   - 🔴 *BDD* (SQL/NoSQL, SGBD, ORM) : 
-   - 🔴 *Frontend* : 
-   - 🔴 *Backend* (API) : 
+- 🟢 Choix des technos
+   - 🟢 **General** : Docker, Typescript, Biome
+   - 🟢 **BDD** (SQL/NoSQL, SGBD, ORM) : TypeORM, TypeGraphQL, PostegreSQL
+   - 🟢 **Frontend** : React, Apollo Client, Sass
+   - 🟢 **Backend** (API) : NodeJS, Apollo Server
 
 **✨ Livrable ✨** : Liste de technos.
 
 ## V. Wireframe
-- 🔴 Charte graphique
+- 🟢 Charte graphique
+```scss
+// Main colors
+$primary-dark: #131212;
+$primary-light: #FFDEE6;
+
+$secondary-dark: #D61D4E;
+$secondary-light: #FF0B55;
+
+$accent-color: #FFF078;
+```
 - 🔴 Outil (Excalidraw, Figma) : **_**
 - 🔴 Liste des wireframes des pages principales : 
    - 🔴 Homepage
